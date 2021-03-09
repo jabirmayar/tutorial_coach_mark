@@ -105,7 +105,7 @@ class TutorialCoachMark {
   BackButtonInterceptor.remove(_backButtonInterceptor);
   }
   
-   bool _backButtonInterceptor(bool stopDefaultButtonEvent) {
+   bool _backButtonInterceptor(bool stopDefaultButtonEvent,RouteInfo info) {
     _removeOverlay();
     return true;
   }
